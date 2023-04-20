@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="54" viewBox="0 0 125 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 36px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.76" y1="0.197" x2="0.019" y2="0.955" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bd00e4"/>
+      <stop offset="1" stop-color="#0078f8"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1318" data-name="Group 1318" transform="translate(3222 16479)">
+    <rect id="Rectangle_105" data-name="Rectangle 105" class="cls-1" width="125" height="54" transform="translate(-3222 -16479)"/>
+    <text id="AI_HR" data-name="AI HR" class="cls-2" transform="translate(-3208 -16437)"><tspan x="0" y="0">AI HR</tspan></text>
+  </g>
+</svg>

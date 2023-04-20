@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+canvas {    
+    max-width: auto;
+    max-height: 300px;
+    margin: 20px;    
+    align-self: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.nav-logo-btn{
+    top: 0;
+    left: 0;
+    margin: 3px;
+}
+
+.nav-logo-btn2{
+    margin: auto;
+    color: #ffffff;
+}
+
+.nav-logo-img{
+    margin: 20px;
+}
+
+.nav-title{
+    font-size: 25px;  
+}
+
+.nav-title-img{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-title-words{
+    margin-left: 20px;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: column;
+    background-color: #003063;
+    position: fixed;
+    transform: translateX(-5000px);
+    transition: transform 0.3s ease-in-out;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    padding: 20px;
+}
+
+.navbar-left.active {
+    transform: translateX(0px);
+}
+
+.navbar-left-logo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.nav-user-img{
+    height: 40px;
+    width: 40px;
+}
+
+/*導覽欄連結*/
+.nav-item{
+    color: white; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: -5px;
+}
+
+.nav-item-title:hover{
+    color: #FFC107;
+    transform: scale(1.1);
+}
+
+.nav-item-icons.rotate {
+    transform: rotate(90deg);
+}
+
+.nav-item-icons {
+    display: block;
+    height: 1.5em;
+    width: 1.5em;    
+    background-size: contain;
+    transition: transform 0.2s ease-out;
+
+}
+
+/*導覽欄內容*/
+
+.nav-item-title {
+    margin: 15px;
+    padding-left: 10px;
+    display:flex;
+    align-items: center;
+}
+
+.nav-item-title-words{
+    margin-left: 10px;
+}
+
+
+/*內容區塊*/
+.container {
+    display: flex;    
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    
+}
+
+
+.container-left{
+    width: 67%;
+    height: 100%;
+}
+
+.container-left-blockA{
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    width: 96%;
+    height: 48%;
+    margin: 2%;
+    padding-top: 10px;
+}
+
+.container-left-blockA-title{
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.container-left-blockB{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.container-left-blockB1{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 46%;
+    height: 85%;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.container-left-blockB1-title{
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.container-left-blockB2{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 46%;
+    height: 85%;
+    margin: 2%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+}
+
+.container-left-blockB2-title{
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.container-right{
+    background-color: rgb(255, 255, 255);
+    width: 33%;
+    height: 100;
+    margin: 1%;
+    margin-bottom: 2.7%;
+}
+
+
+.container-right-blockC{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 101%;
+    width: 96%;    
+    padding-top: 10px;
+}
+
+.container-right-blockC-title{
+    padding-left:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.container-right-blockC-list-row{
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 3px;
+}
+
+
+.container-right-blockC-list-row-more{
+    margin-bottom: 20px;
+}
+
+
+
+/*狀態顯示區*/
+.container-right-blockC-list-row-status-edit{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: white;
+    border-style: solid;
+    border-color: #707070;    
+}
+
+.container-right-blockC-list-row-status-active{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: #0C7446;
+    border-style: solid;
+    border-color: #0C7446;    
+}
+
+.container-right-blockC-list-row-status-pending{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color:#FFC107;
+    border-style: solid;
+    border-color: #FFC107;    
+}
+
+.container-right-blockC-list-row-status-close{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color:#6C757D;
+    border-style: solid;
+    border-color: #6C757D;   
+}
+
+.container-right-blockC-list-row-words{
+    font-size: 23px;
+    color:blue;
+    text-decoration: underline;
+    
+}
+
+
+
+@media screen and (max-width: 1170px) {
+    
+    .container-right-blockC-list-row-words{
+        font-size: 15px;
+    }
+
+    .container-right-blockC-list-row{
+       
+        margin-left: 20px;
+        
+    }
+
+}
+
+@media screen and (max-width: 964px) {
+    
+    .container-right-blockC-list-row-words{
+        font-size: 15px;
+    }
+   
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+    flex-direction: column;    
+    }
+    .container-left{
+    width: 100%;
+    }
+    .container-right{
+    width: 100%;
+    } 
+
+    .container-right-blockC-list-row-words{
+    font-size: 23px;
+    
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 501px) {
+    .container-left-blockB{
+        flex-direction: column;    
+    }
+    .container-left-blockB1{
+        width: 95%;
+    }
+    .container-left-blockB2{
+        width: 95%;
+    }
+    .container-right-blockC{
+        width: 95%;        
+    }    
+    
+    
+
+}
